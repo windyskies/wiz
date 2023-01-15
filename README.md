@@ -7,7 +7,7 @@
 ### Installation
 ``` bash
 $ sh install.sh
-$ chmod u+x gci.sh
+$ chmod u+x wiz.sh
 $ brew install gnu-sed # if you are using MacOS
 ```
 
