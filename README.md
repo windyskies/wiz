@@ -52,7 +52,8 @@ $ wiz filename.c wiz.filename.z
 # v1.11 --> @previous --< fix alias err
 # v1.12 --> @current --< beautify wiz.file.c
 # v1.2 --> upcoming --< new feature: [will auto-recognize wiz.#.z files]
-# v1.3 --> upcoming --< new feature: [multi language support]
+# v2.0 ---> @release ----< !!auto-add tests!! [using only variable names]
+# v3.0 --> upcoming --< new feature: [multi language support]
 ```
 
 ### Instructions
