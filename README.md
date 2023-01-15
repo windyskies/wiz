@@ -1,18 +1,18 @@
 ## extremely cooool wizard to run fast tests in c:
 
-```md
+``` text
 # write simple tests without having to configure the original file.
 # it is as simple making a to-do list
 ```
 ### Installation
-```sh
+``` bash
 $ sh install.sh
 $ chmod u+x gci.sh
 $ brew install gnu-sed # if you are using MacOS
 ```
 
 ### How to run
-```sh
+``` bash
 $ wiz water.c wiz.debug.z
 ```
 
@@ -29,11 +29,13 @@ $ wiz water.c wiz.debug.z
 ## check the instructions from bottom if you do not know specifiers in c
 ```
 > examples:
-```md
+``` bash
 # [make] a new file
 $ touch wiz.[filename].z
+
 # [open] wiz.[filename].z
 $ nano wiz.[filename].z
+
 # [write] test cases in "wiz.[filename].z" file
 [16] d _firstvariable_ 
 [19] f _secondvariable_
@@ -46,8 +48,9 @@ $ wiz filename.c wiz.filename.z
 
 ### Version Notes
 
-```md
-# v1 --> @default --< initial
+``` text
+# v1 --> @previous --< initial
+# v1.1 --> @default --< fix
 # v1.2 --> upcoming --< new feature: [will auto-recognize wiz.#.z files]
 # v1.3 --> upcoming --< new feature: [multi language support]
 ```
