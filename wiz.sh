@@ -12,7 +12,7 @@ tokenize() {
     plainf=$(<${FILENAME})
     output=".wiz/wiz.run.c"
 
-    echo initializing $2
+    echo 'wiz:start' $2
 
     #plainf= cat $FILENAME
     #plainf="$(<wiz.test.z)"
@@ -56,10 +56,16 @@ else
     exit
 fi
 
+cursh=`echo $SHELL`
+pattern="/bin/"
+cursh=${cursh/$pattern/}
+
 shopt -s expand_aliases
-source ~/.zshrc
+source ~/.${cursh}rc &> /dev/null
+
+alias xgci=gci
 #run the debug file:
 printf "\n"
-gci ".wiz/wiz.run.c" 0
+xgci ".wiz/wiz.run.c" 0
 
-echo "end script"
+echo ">> wizard:end <<"

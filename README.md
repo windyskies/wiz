@@ -49,8 +49,8 @@ $ wiz filename.c wiz.filename.z
 ### Version Notes
 
 ``` text
-# v1 --> @previous --< initial
-# v1.1 --> @default --< fix
+# v1.1 --> @previous --< bugfix
+# v1.11 --> @current --< fix alias err
 # v1.2 --> upcoming --< new feature: [will auto-recognize wiz.#.z files]
 # v1.3 --> upcoming --< new feature: [multi language support]
 ```
