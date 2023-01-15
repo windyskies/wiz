@@ -37,9 +37,9 @@ tokenize() {
 
         ####ctx=${LINE}
         if [[ "$OSTYPE" == "darwin"* ]]; then
-            gsed -i -e "${LINE}i printf(\"%${SPEC}\", ${VAR});" $output
+            gsed -i -e "${LINE}i \\\tprintf(\"${VAR}: %${SPEC}\\\n\", ${VAR});" $output
         else
-            sed -i "${LINE}i printf(\"%${SPEC}\", ${VAR});" $output
+            sed -i -e "${LINE}i \\\tprintf(\"${VAR}: %${SPEC}\\\n\", ${VAR});" $output
         fi
         
         i=$(($i + 1))
