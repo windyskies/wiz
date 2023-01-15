@@ -8,14 +8,14 @@ backup() {
 
 #tokenize the debug file and evaluate test cases --> write the final *.c file
 tokenize() {    
-    FILENAME=$2 #"wiz.test.nit"
+    FILENAME=$2 #"wiz.test.z"
     plainf=$(<${FILENAME})
     output=".wiz/wiz.run.c"
 
     echo initializing $2
 
     #plainf= cat $FILENAME
-    #plainf="$(<wiz.test.nit)"
+    #plainf="$(<wiz.test.z)"
 
     set -o noglob         # start-special-chars
         IFS=$'\n' lines=($plainf)
@@ -48,11 +48,11 @@ tokenize() {
 
 
 ## script starts here
-if [[ $1 == *".c"* ]] && [[ $2 == *"wiz."*".nit"* ]]; then
+if [[ $1 == *".c"* ]] && [[ $2 == *"wiz."*".z"* ]]; then
     backup $1 $2
     tokenize $1 $2
 else
-    echo ">>--usage--> wiz filename1.c wiz.filename2.txt"
+    echo ">>--usage--> wiz filename1.c wiz.filename2.z"
     exit
 fi
 

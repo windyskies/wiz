@@ -8,17 +8,17 @@
 ```sh
 $ sh install.sh
 $ chmod u+x gci.sh
-$ brew install gnu-sed # if you are using MacOS, please install gnu-sed
+$ brew install gnu-sed # if you are using MacOS
 ```
 
 ### How to run
 ```sh
-$ wiz water.c wiz.debug.nit
+$ wiz water.c wiz.debug.z
 ```
 
 ### Usage & Examples
 
-> a simple reference of debug.[filename].txt
+> a simple reference of wiz.[filename].z
 ```md
 [#line_number] _specifier _variable_name --> syntax
      \  |  /                 ^^^^^^^^^^
@@ -30,13 +30,16 @@ $ wiz water.c wiz.debug.nit
 ```
 > examples:
 ```md
-# [open] wiz.[filename].nit
-# [write] test cases in "wiz.[filename].nit" file
+# [make] a new file
+$ touch wiz.[filename].z
+# [open] wiz.[filename].z
+$ nano wiz.[filename].z
+# [write] test cases in "wiz.[filename].z" file
 [16] d _firstvariable_ 
 [19] f _secondvariable_
 
 # [run] the following from terminal:
-$ wiz filename.c wiz.filename.nit
+$ wiz filename.c wiz.filename.z
 ```
 #### >>> to auto-run the testfiles install [gci from github <<<](https://github.com/windyskies/gci)
 
@@ -45,7 +48,8 @@ $ wiz filename.c wiz.filename.nit
 
 ```md
 # v1 --> @default --< initial
-# v2 --> upcoming --< new feature: [will auto-recognize wiz.#.nit files]
+# v1.2 --> upcoming --< new feature: [will auto-recognize wiz.#.z files]
+# v1.3 --> upcoming --< new feature: [multi language support]
 ```
 
 ### Instructions
